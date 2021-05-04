@@ -5,9 +5,10 @@ import {PoliciesDescription} from '../../components/policies/PoliciesDescription
 export const Policies = () => {
     return (
        
-           <div className="policies">
+          <DefaultLayout>
                <PoliciesDescription />
-           </div>
+               </DefaultLayout>
+       
        
     )
 }

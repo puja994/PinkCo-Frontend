@@ -6,6 +6,7 @@ import { About } from './pages/about/About';
 import { Contact } from './pages/contact/Contact';
 import { Policies } from './pages/policy/Policies';
 import { Home } from './pages/home/Home';
+import {Products} from './pages/products/Products'
 
 function App() {
   return (
@@ -13,8 +14,13 @@ function App() {
       <Router>
         <Switch>
 
-        <Route exact path="/">
+        <Route exact path="/home">
             <Home />
+          </Route>
+
+
+          <Route exact path="/products">
+            <Products />
           </Route>
 
 

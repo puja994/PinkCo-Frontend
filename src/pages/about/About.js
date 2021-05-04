@@ -5,10 +5,11 @@ import {AboutDescription} from '../../components/about/AboutDescription'
 export const About = () => {
     return (
         <div>
-         
-                <div className="about">
+         <DefaultLayout>
+              
                     <AboutDescription />
-                </div>
+                    </DefaultLayout>
+              
             
             
         </div>

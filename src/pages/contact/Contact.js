@@ -5,9 +5,10 @@ import {ContactForm} from '../../components/contact/ContactForm'
 export const Contact = () => {
     return (
        
-            <div className="contact">
+            <DefaultLayout>
                 <ContactForm />
-            </div>
+                </DefaultLayout>
+       
         
     )
 }
