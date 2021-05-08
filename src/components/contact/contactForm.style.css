@@ -1,8 +1,9 @@
 .contact-form{
-    width:450px;
-    align-items: center;
-   margin-left: 450px;
-   margin-top: 50px;
+    display: flex;
+    /* width:450px; */
+    /* align-items: center; */
+   /* margin-left: auto; */
+   /* margin-top: 50px; */
   
    
 }

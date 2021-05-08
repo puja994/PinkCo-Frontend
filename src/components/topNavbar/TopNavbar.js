@@ -7,9 +7,12 @@ export const TopNavbar = () => {
     return (
       <div>
         <div className="login mt">
+        <LinkContainer to="/login">
          <Nav.Link >LOGIN</Nav.Link>
+         </LinkContainer>
          <Nav.Link >SIGNUP</Nav.Link>
-         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+         <FormControl type="text" placeholder="Search" className="mr-sm-2" width="20px" />
+         <i className="fas fa-cart-plus "></i>
 
          </div>
       
@@ -39,10 +42,7 @@ export const TopNavbar = () => {
               <Nav.Link>CONTACT</Nav.Link>
             </LinkContainer>
 
-            
-  
-
-           
+          
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -7,17 +7,21 @@ import makeupImageThree from '../assets/img/categoryImages/beautyAccessoriesCate
 export const CategoryCards = () => {
     return (
         <div>
+          <h1 className="mt-5 mb-5"style={{ textAlign: "center" }}>Categories</h1>
             <Container>
   <Row>
     <Col xs={6} md={4}>
       <Image src={makeupImageOne} roundedCircle width="100px" height="auto"/>
+      Makeup Items
 
     </Col>
     <Col xs={6} md={4}>
       <Image src= {makeupImageTwo} roundedCircle width="100px" height="auto"/>
+      Skincare Items
     </Col>
     <Col xs={6} md={4}>
       <Image src={makeupImageThree} roundedCircle width="100px" height="auto" />
+      Beauty Accessories
     </Col>
   </Row>
 </Container>

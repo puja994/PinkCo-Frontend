@@ -45,7 +45,7 @@ export const HomeLayout = () => {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-<h1 className="mt-5 ">Categories</h1>
+
 
 <CategoryCards/>
         </div>

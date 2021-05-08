@@ -4,9 +4,9 @@ import './contactForm.style.css'
 
 export const ContactForm = () => {
     return (
-        <div>
+       <>
           <h1 style={{color: "#F19FDE"},{textAlign:"center"}}>Contact Us</h1>
-          <Jumbotron className="contact-form">
+          <Jumbotron fluid className="contact-form">
             <Form >
 
   <Form.Group controlId="exampleForm.ControlInput1">
@@ -27,6 +27,7 @@ export const ContactForm = () => {
   <Button type="submit">Submit</Button>
 </Form>
 </Jumbotron>
-        </div>
+</>
+       
     )
 }
