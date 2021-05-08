@@ -1,10 +1,17 @@
 import React from 'react'
-import {Navbar, Nav} from 'react-bootstrap'
+import {Navbar, Nav, FormControl} from 'react-bootstrap'
 import { LinkContainer } from "react-router-bootstrap"
 import './topnavbar.style.css'
 
 export const TopNavbar = () => {
     return (
+      <div>
+        <div className="login mt">
+         <Nav.Link >LOGIN</Nav.Link>
+         <Nav.Link >SIGNUP</Nav.Link>
+         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+
+         </div>
       
         <Navbar collapseOnSelect  variant="dark" expand="md" className="color-nav">
 
@@ -35,11 +42,11 @@ export const TopNavbar = () => {
             
   
 
-            <Nav.Link >LOGOUT</Nav.Link>
+           
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      
+      </div>
       
         
     )

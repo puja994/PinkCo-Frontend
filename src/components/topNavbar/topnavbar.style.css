@@ -1,3 +1,6 @@
 .color-nav{
     background-color:#F19FDE ;
 }
+.login{
+    display: flex;
+}
