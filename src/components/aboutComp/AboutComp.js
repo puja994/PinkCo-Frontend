@@ -1,7 +1,7 @@
 import React from 'react'
 import {Jumbotron} from 'react-bootstrap'
 
-export const AboutDescription= () => {
+export const AboutComp= () => {
     return (
         <div>
             <h1 className="" style={{color: "#F19FDE"},{textAlign:"center"}}>About Us</h1>

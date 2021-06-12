@@ -1,14 +1,16 @@
 import React from 'react'
+import { DisplayAllProducts } from '../products/DisplayAllProducts'
 import {Carousel, Container,Row, Col, Image} from 'react-bootstrap'
 import carouselImageOne from '../assets/img/Pink and Brown Classic Feminine Beauty Website-2/1.png'
 import carouselImageTwo from '../assets/img/Pink and Brown Classic Feminine Beauty Website-2/2.png'
 import carouselImageThree from '../assets/img/Pink and Brown Classic Feminine Beauty Website-2/3.png'
-import { CategoryCards } from '../category/CategoryCards'
+import './home.css'
 
-export const HomeLayout = () => {
+
+export const HomeComp = () => {
     return (
-        <div>
-          <Carousel>
+        <div className="carousal">
+                     <Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -47,7 +49,9 @@ export const HomeLayout = () => {
 </Carousel>
 
 
-<CategoryCards/>
+
+
+            {/* <DisplayAllProducts/> */}
         </div>
     )
 }

@@ -1,14 +1,11 @@
 import React from 'react'
 import DefaultLayout from '../../components/layout/DefaultLayout'
-import { ProductsDisplay } from '../../components/products/ProductsDisplay'
+import { DisplayAllProducts } from '../../components/products/DisplayAllProducts'
 
 export const Products = () => {
     return (
         <DefaultLayout>
-            <ProductsDisplay/>
-            </DefaultLayout>
-       
+            <DisplayAllProducts/>
+        </DefaultLayout>
     )
 }
-
-

@@ -1,14 +1,11 @@
 import React from 'react'
+import { ContactComp } from '../../components/contactComp/ContactComp'
 import DefaultLayout from '../../components/layout/DefaultLayout'
-import {ContactForm} from '../../components/contact/ContactForm'
 
 export const Contact = () => {
     return (
-       
-            <DefaultLayout>
-                <ContactForm />
-                </DefaultLayout>
-       
-        
+        <DefaultLayout>
+            <ContactComp/>
+        </DefaultLayout>
     )
 }

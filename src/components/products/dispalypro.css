@@ -1,0 +1,15 @@
+/* .pro{
+    background-color: red;
+    display: flex;
+    padding: 20px;
+}
+.card-deco{
+    display: grid;
+} */
+
+/* .pro{
+    display: flex;
+} */
+.card{
+    display: flex;
+}

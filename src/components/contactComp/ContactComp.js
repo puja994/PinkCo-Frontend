@@ -1,8 +1,8 @@
 import React from 'react'
 import {Form, Button, Jumbotron} from 'react-bootstrap'
-import './contactForm.style.css'
 
-export const ContactForm = () => {
+
+export const ContactComp = () => {
     return (
        <>
           <h1 style={{color: "#F19FDE"},{textAlign:"center"}}>Contact Us</h1>

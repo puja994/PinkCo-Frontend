@@ -1,13 +1,12 @@
-import React from 'react'
-import DefaultLayout from '../../components/layout/DefaultLayout'
-import {LoginForm} from '../../components/login-form/LoginForm.comp'
+import React from "react";
+import {LoginForm }from "../../components/login-form/LoginForm";
+// import DefaultLayout from "../../components/default-layout/DefaultLayout";
+const Login = () => {
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
+};
 
-export const Login = () => {
-    return (
-       
-            <div className="login">
-                <LoginForm />
-            </div>
-      
-    )
-}
+export default Login;

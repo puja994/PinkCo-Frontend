@@ -1,4 +1,18 @@
+.top-links{
+display: flex;
+justify-content:flex-end
+}
+.copy-right{
+    min-height: 5vh;
+    background: #000000;
+    color: white;
+  
+}
+.child{
+    min-height: 90vh;
+}
 
+/* 
 .child{
     min-height: 90vh;
    
@@ -9,4 +23,4 @@
     color:white;
     min-height: 5vh;
 
-}
+} */
