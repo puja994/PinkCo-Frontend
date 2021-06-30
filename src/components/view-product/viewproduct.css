@@ -1,0 +1,11 @@
+.card-view{
+
+}
+.cardwrapper{
+    display: flex;
+    
+}
+.product-details{
+    display: flex;
+    position: inherit;
+}

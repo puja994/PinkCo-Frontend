@@ -7,7 +7,7 @@ import { Products } from './pages/products/Products';
 
 import { ProductDisplay } from './pages/productDisplay/ProductDisplay';
 import { Cart } from './pages/cart/Cart';
-// import { ViewProducts } from './pages/viewProduct/ViewProducts.js';
+import { ViewProducts } from './pages/viewProduct/ViewProducts.js';
 import { About } from './pages/about/About';
 import { Contact } from './pages/contact/Contact';
 import Login from './pages/login/Login';
@@ -25,22 +25,22 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          {/* <Route exact path="/checkout">
+          <Route exact path="/checkout">
             <Checkout/>
-          </Route> */}
+          </Route>
 
 
           <Route exact path="/home">
             <Home/>
           </Route>
  
-           {/* <Route exact path="/cart">
+          <Route exact path="/cart">
             <Cart/>
           </Route>
 
-           <Route exact path="/products/:slug">
+           <Route exact path="/products/:slug/">
              <ViewProducts/>
-           </Route>  */}
+           </Route>  
 
           <Route exact path="/category/:slug/:_id">
             <ProductDisplay/>

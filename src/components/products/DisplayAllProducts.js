@@ -22,7 +22,27 @@ export const DisplayAllProducts = () => {
     return (
       
         <div className="pro">
-          hi
+
+{/* {isLoading && <Spinner variant="primary" animation="border" />}
+      {productList?.map((item, i) => {
+        return (
+<div class="card" key={i}>
+<Image
+ className=""
+              src={item?.images[0]}
+               alt="Products"
+                style={{ width: "30%" }}
+/>
+<div>
+  {item.name}
+  {item.price}
+  {item.decription}
+
+  </div>
+          
+        )
+      })} */}
+          
          {isLoading && <Spinner variant="primary" animation="border" />}
       {productList?.map((item, i) => {
         return (
@@ -36,7 +56,7 @@ export const DisplayAllProducts = () => {
     {item.price} {""}
     {item.description} 
     </Card.Text>
-    {/* <Cart.Text>{item.description} </Cart.Text> */}
+    <Cart.Text>{item.description} </Cart.Text>
     <Button variant="info" color="black">  <Link to={`/products/${item.slug}`}>View Product</Link></Button>
   </Card.Body>
 </Card>
