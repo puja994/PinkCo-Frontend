@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchGivenSlugProduct } from "../../pages/products/productAction";
-import { Image, Spinner, Button, Alert, Card, Jumbotron } from "react-bootstrap";
+import { Image, Spinner, Button } from "react-bootstrap";
 import {addProductToCart} from '../../pages/cart/CartAction'
 import './viewproduct.css'
 
