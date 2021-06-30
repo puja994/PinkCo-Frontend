@@ -9,7 +9,7 @@ import './viewproduct.css'
 
 export const ViewProduct = () => {
   const dispatch = useDispatch()
-  const [qty,setQty] = useState(1)
+
   const { selectedProductBySlugList, isLoading } = useSelector(
     (state) => state.product
   );

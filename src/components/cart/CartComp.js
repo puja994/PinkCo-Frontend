@@ -45,8 +45,8 @@ export const CartComp = () => {
                                             className="cartimg"
                                             />
                                         </td>
-                                        <Link to={`/product/${row.slug}`} className="name">
-                                        {" "}
+                                        <Link to={`/product/${row.slug}`}>
+                                     
                                         <td>{row.name}</td>{" "}
                                     </Link>
                                     <td>{row.price}</td>
@@ -68,7 +68,7 @@ export const CartComp = () => {
                 ): (
                     <p>Cart empty
                     <Link to="/home">
-            <Button variant="success">Start Shopping</Button>
+            <Button variant="success">Home</Button>
           </Link>
           </p>
                 )
