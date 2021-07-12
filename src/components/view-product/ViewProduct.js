@@ -9,6 +9,7 @@ import './viewproduct.css'
 
 export const ViewProduct = () => {
   const dispatch = useDispatch()
+  const [selectedQuantity, setSelectedQuantity] = useState(1)
 
   const { selectedProductBySlugList, isLoading } = useSelector(
     (state) => state.product
@@ -20,8 +21,8 @@ export const ViewProduct = () => {
     dispatch(fetchGivenSlugProduct(slug));
   }, [slug])
 
-  const handleOnClick = (item,qty)=>{
-      dispatch(addProductToCart(item,qty))
+  const handleOnClick = (itemsList,selectedQuantity)=>{
+      dispatch(addProductToCart(itemsList,selectedQuantity))
   }
 
 
@@ -33,27 +34,31 @@ export const ViewProduct = () => {
       {selectedProductBySlugList?.map((item, i) => {
         return (
           <div>
-            <div class="card" key={i}>
+            <div className="cardwrap" key={i}>
+              <div className="side">
               <Image
                 className=""
                 src={item?.images[0]}
                 alt="Products"
-                style={{ width: "50%", height:"30%"}}
+                style={{ width: "30%", height:"30%"}}
               />
+              </div>
                
+               <div className="details">
                 <h1>{item.name}</h1>
                <h2> {item.price}</h2> 
-                <h6>{item.description}</h6>
-                <input 
+                <h6><span style={{fontWeight: "bold"}}>Details: </span> {item.description}</h6>
+                <span style={{fontWeight: "bold"}}>Quantity:</span> <input 
                 name="qty"
                 type="form"
                 width= "30px"
+                className="inputfield"
                 />
-                <Button 
+                <Button className="btn"
                 width="50px"
-                onClick={()=> handleOnClick(item,qty)}
+                onClick={()=> handleOnClick(item,selectedQuantity)}
                 >Add To Cart</Button>
-             
+             </div>
 
            
           </div>

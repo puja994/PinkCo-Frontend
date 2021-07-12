@@ -6,6 +6,8 @@ justify-content:flex-end
     min-height: 5vh;
     background: #000000;
     color: white;
+    padding: 20px;
+    text-align: center;
   
 }
 .child{

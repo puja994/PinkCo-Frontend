@@ -11,7 +11,8 @@ import {
         ...itemsList,
         selectedQuantity,
       };
-      dispatch(cartSuccess(newItem));
+      dispatch(cartSuccess(newItem))
+      localStorage.setItem("cart", JSON.stringify(newItem))
     } catch (error) {
       const err = {
         status: "error",
@@ -24,7 +25,8 @@ import {
   
   export const deleteFromCart = (item) => async (dispatch) => {
     try {
-      dispatch(deleteCartSuccess(item));
+      dispatch(deleteCartSuccess(item))
+      localStorage.removeItem("cart", JSON.stringify(item));
     } catch (error) {
       const err = {
         status: "error",

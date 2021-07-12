@@ -1,3 +1,36 @@
+body{
+    box-sizing: border-box;
+}
 .catCard{
-    display:flex;
+    display: grid;
+    gap:0.3rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 8px auto;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.menupro{
+    margin: 8px auto;
+    border: 3px solid palevioletred; 
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: outset;
+}
+
+
+
+.display-button{
+    color: black;
+    padding: 20px;
+    border: none;
+}
+  .menu-link{
+    text-decoration: none !important;
+    color: black;
+
+  }
+  .link:hover{
+    color: black;
 }

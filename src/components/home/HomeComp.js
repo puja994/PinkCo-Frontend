@@ -51,7 +51,7 @@ export const HomeComp = () => {
 
 
 
-            {/* <DisplayAllProducts/> */}
+            <DisplayAllProducts/>
         </div>
     )
 }

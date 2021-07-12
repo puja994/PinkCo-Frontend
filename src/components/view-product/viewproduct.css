@@ -1,11 +1,27 @@
-.card-view{
-
-}
-.cardwrapper{
-    display: flex;
+.details{
     
+    height: fit-content;
+    width: 350px;
+   float: right;
+  margin-top: 10px;
+  margin-right: 150px;
+display: inline;
+  
+   
 }
-.product-details{
-    display: flex;
-    position: inherit;
+.side img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.inputfield{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid palevioletred;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    background: palevioletred !important;
+    border: 1px solid palevioletred !important;
 }

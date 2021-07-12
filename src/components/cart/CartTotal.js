@@ -24,7 +24,7 @@ export const CartTotal = () => {
         return initialPrice
     }
 
-
+    console.log(cartItemList[0]?.qty);
     return (
         <div>
             <h2>Total items: {totalNumberOfItems()}</h2>

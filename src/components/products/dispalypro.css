@@ -1,15 +1,55 @@
-/* .pro{
-    background-color: red;
-    display: flex;
-    padding: 20px;
+body{
+    box-sizing: border-box;
 }
-.card-deco{
+.pro{
     display: grid;
-} */
+    gap:0.3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
 
-/* .pro{
+.cardo{
+    border: 3px solid palevioletred; 
+    margin: 8px auto;
+    width: 300px;
     display: flex;
-} */
-.card{
-    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: outset;
+ 
+}
+
+.display-button{
+    color: black;
+    padding: 20px;
+    border: none;
+}
+.link{
+    text-decoration: none !important;
+    color: white;
+}
+.link:hover{
+    color: black;
+}
+
+@media(max-width:575px){
+
+    .pro{
+        display: grid;
+        gap:0.3rem;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+
+
+    .cardo{
+        border: 3px solid palevioletred; 
+        margin: 8px auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-style: outset;
+    } 
+
 }

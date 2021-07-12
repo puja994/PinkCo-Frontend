@@ -46,18 +46,18 @@ export const DisplayAllProducts = () => {
          {isLoading && <Spinner variant="primary" animation="border" />}
       {productList?.map((item, i) => {
         return (
-          <div class="card" key={i}>
+          <div class="cardo" key={i}>
 
 <Card style={{ width: '18rem' }} className="prodis">
-  <Card.Img variant="top" src={item?.images[0]}  />
+  <Card.Img className="hi" variant="top" src={item?.images[0]}  />
   <Card.Body>
     <Card.Title>{item.name}</Card.Title>
     <Card.Text>
     {item.price} {""}
-    {item.description} 
+     
     </Card.Text>
-    <Cart.Text>{item.description} </Cart.Text>
-    <Button variant="info" color="black">  <Link to={`/products/${item.slug}`}>View Product</Link></Button>
+    {/* <Cart.Text>{item.description} </Cart.Text> */}
+    <Button variant="info" color="black" className="display-button">  <Link className="link" to={`/products/${item.slug}`}>View Product</Link></Button>
   </Card.Body>
 </Card>
 

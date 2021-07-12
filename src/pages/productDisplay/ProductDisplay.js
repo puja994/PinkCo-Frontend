@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import DefaultLayout from '../../components/layout/DefaultLayout'
 import { fetchSelectedProducts } from "../../pages/products/productAction";
-import { Image, Spinner } from "react-bootstrap";
+import { Image, Spinner, Button } from "react-bootstrap";
 import { Link } from "react-router-dom" 
 import './catCard.css'
 
@@ -19,22 +19,22 @@ export const ProductDisplay = () => {
     return (
       
         <DefaultLayout>
-          hi from 2
+        
           <div className="catCard">
        {isLoading && <Spinner variant="primary" animation="border" />}
           {selectedProductList?.map((item, i) => {
             return (
-              <div  key={i}>
+              <div className="menuPro" key={i}>
                 <Image
                   className=""
                   src={item?.images[0]}
-                  style={{ width: "30%" }}
+                  style={{ width: "50%" }}
                 />
                 <p>{item.name}</p>
                 <p >{item.price}</p>
-                <p>{item.description}</p>
+                {/* <p>{item.description}</p> */}
                 <p>
-                  <Link to={`/products/${item.slug}`}>View Product</Link>
+                 <Button variant="info" color="black" className="display-button"> <Link className="menu-link"to={`/products/${item.slug}`}>View Product</Link></Button>
                 </p>
               </div>
             );

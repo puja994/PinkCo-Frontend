@@ -11,8 +11,10 @@ export const CartComp = () => {
     const dispatch = useDispatch()
     const {cartItemList} = useSelector((state)=> state.cart)
 
+    const cartItemListLocalStorage = localStorage.getItem("cart")? JSON.parse(localStorage.getItem("cart")):[]
+
     useEffect(() => {
-        !cartItemList && dispatch(addProductToCart)
+        !cartItemList && dispatch(addProductToCart(cartItemListLocalStorage))
     }, [cartItemList])
 
     const handleOnDelete = (item) =>{
@@ -29,7 +31,7 @@ export const CartComp = () => {
                                 <th>Image</th>
                                 <th>Name</th>
                                 <th>price</th>
-                                <th>quantity</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
 
@@ -45,20 +47,21 @@ export const CartComp = () => {
                                             className="cartimg"
                                             />
                                         </td>
-                                        <Link to={`/product/${row.slug}`}>
-                                     
                                         <td>{row.name}</td>{" "}
-                                    </Link>
+                                        {/* <Link to={`/product/${row.slug}`}>
+                                     
+                                        
+                                    </Link> */}
                                     <td>{row.price}</td>
 
                                     <td>
-                    <Button
-                      variant="warning"
-                      onClick={() => handleOnDelete(row)}
-                    >
-                      Remove Item
-                    </Button>
-                  </td>
+                                    <Button
+                                    variant="warning"
+                                    onClick={() => handleOnDelete(row)}
+                                    >
+                                    Remove Item
+                                    </Button>
+                                </td>
                                     </tr>
                                 ))
                             }
@@ -66,11 +69,14 @@ export const CartComp = () => {
 
                         </Table>
                 ): (
-                    <p>Cart empty
+                    <>
+                    <p>Cart empty!</p>
+                       
                     <Link to="/home">
-            <Button variant="success">Home</Button>
+            <Button variant="success"  className="cartbtn">start shopping</Button>
           </Link>
-          </p>
+          </>
+          
                 )
             }
             

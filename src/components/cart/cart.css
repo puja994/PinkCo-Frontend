@@ -1,3 +1,14 @@
 .cartimg{
     width: 50px;
 }
+p{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.cartbtn{
+    width: 400px;
+    justify-content: center;
+  padding: 10px;
+  margin-left: 500px;
+  margin-top: 250px;
+}
