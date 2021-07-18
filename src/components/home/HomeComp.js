@@ -5,6 +5,7 @@ import carouselImageOne from '../assets/img/Pink and Brown Classic Feminine Beau
 import carouselImageTwo from '../assets/img/Pink and Brown Classic Feminine Beauty Website-2/2.png'
 import carouselImageThree from '../assets/img/Pink and Brown Classic Feminine Beauty Website-2/3.png'
 import './home.css'
+import { Testimonials } from '../testimonials/Testimonials'
 
 
 export const HomeComp = () => {
@@ -49,7 +50,7 @@ export const HomeComp = () => {
 </Carousel>
 
 
-
+<Testimonials/>
 
             <DisplayAllProducts/>
         </div>
